@@ -95,10 +95,10 @@
 <body>
     <header>
         <div id="logo">
-            <img src="/images/landing-logo.svg">
+            <img src="images/landing-logo.svg">
         </div>
         <a href="#read_more">
-            <img src="/images/down-arrow.svg">
+            <img src="images/down-arrow.svg">
         </a>
     </header>
     <main id="read_more">
@@ -107,11 +107,11 @@
             {% for participant in site.participants %}
             <li>
                 <h2>
-                    <a href="{{ participant.url }}">
+                    <a href="{{ site.baseurl}}/{{ participant.url }}">
                         {{ participant.name }}
                     </a>
                 </h2>
-                <a href="{{ participant.url }}">
+                <a href="{{ site.baseurl}}/{{ participant.url }}">
                     <img src="https://github.com/{{ participant.github_username }}.png">
                 </a>
             </li>
