@@ -3,46 +3,12 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ site.title }}</title>
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/common.css">
     <style type="text/css">
-        body {
-            margin: 0;
-            padding: 0 25px;
-            font-family: Avenir Next;
-            font-style: normal;
-            font-weight: normal;
-            line-height: normal;
-            font-size: 14px;
-        }
-
-        h1 {
-            font-family: Avenir Next;
-            font-style: normal;
-            font-weight: normal;
-            line-height: normal;
-            font-size: 24px;
-
-            color: #000000;
-            margin: 0;
-        }
-
-        h2 {
-            font-family: Avenir Next;
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal;
-            font-size: 36px;
-
-            color: #000000;
-            margin: 0;
-        }
-
-        a {
-            color: #000000;
-        }
-
         main {
             max-width: 325px;
             margin: 0 auto;
+            padding: 0 25px;
         }
 
         .pair {
@@ -110,7 +76,7 @@
         {{ content }}
         <div class="pair github">
             <a href="https://github.com/{{ page.github_username }}">
-                <img src="../images/GitHub-Mark-64px.svg">
+                <img src="{{ site.baseurl }}/assets/GitHub-Mark-64px.svg">
             </a>
             <h2>
                 <a href="https://github.com/{{ page.github_username }}">
@@ -121,7 +87,7 @@
     </main>
     <footer>
         <a href="..">
-            <img src="../images/footer-logo.svg">
+            <img src="{{ site.baseurl }}/assets/footer-logo.svg">
         </a>
         <p>
             Heart by David García from the Noun Project<br>

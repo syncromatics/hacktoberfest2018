@@ -3,11 +3,8 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ site.title }}</title>
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/common.css">
     <style type="text/css">
-        body {
-            margin: 0;
-        }
-
         header {
             display: flex;
             width: 100%;
@@ -28,30 +25,6 @@
             bottom: 10px;
             width: 100%;
             text-align: center;
-        }
-
-        h1 {
-            font-family: Avenir Next;
-            font-style: normal;
-            font-weight: normal;
-            line-height: normal;
-            font-size: 24px;
-
-            color: #000000;
-        }
-
-        h2 {
-            font-family: Avenir Next;
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal;
-            font-size: 36px;
-
-            color: #000000;
-        }
-
-        a {
-            color: #000000;
         }
 
         main {
@@ -95,10 +68,10 @@
 <body>
     <header>
         <div id="logo">
-            <img src="images/landing-logo.svg">
+            <img src="assets/landing-logo.svg">
         </div>
         <a href="#read_more">
-            <img src="images/down-arrow.svg">
+            <img src="assets/down-arrow.svg">
         </a>
     </header>
     <main id="read_more">
