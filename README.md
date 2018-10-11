@@ -1,4 +1,4 @@
-# GMV Syncromatics ❤️ Hacktoberfest 20118
+# GMV Syncromatics ❤️ Hacktoberfest 2018
 
 This is a little website to hack on for [Hacktoberfest 2018](https://hacktoberfest.digitalocean.com).
 
