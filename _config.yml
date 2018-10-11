@@ -1,23 +1,20 @@
+---
 title: GMV Syncromatics ❤️ Hacktoberfest
-baseurl: "/hacktoberfest2018" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+timezone: UTC
 collections:
   participants:
+    title: Participants
     output: true
-# Build settings
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+baseurl: "/hacktoberfest2018"
+url: ''
 markdown: kramdown
 plugins:
-  - jekyll-feed
+- jekyll-feed
 sass:
-    sass_dir: _sass
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+  sass_dir: _sass

@@ -1,4 +1,5 @@
 ---
+title: Daniel
 layout: default
 name: Daniel James
 github_username: thzinc
