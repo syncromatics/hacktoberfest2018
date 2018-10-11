@@ -1,0 +1,133 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ site.title }}</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0 25px;
+            font-family: Avenir Next;
+            font-style: normal;
+            font-weight: normal;
+            line-height: normal;
+            font-size: 14px;
+        }
+
+        h1 {
+            font-family: Avenir Next;
+            font-style: normal;
+            font-weight: normal;
+            line-height: normal;
+            font-size: 24px;
+
+            color: #000000;
+            margin: 0;
+        }
+
+        h2 {
+            font-family: Avenir Next;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            font-size: 36px;
+
+            color: #000000;
+            margin: 0;
+        }
+
+        a {
+            color: #000000;
+        }
+
+        main {
+            max-width: 325px;
+            margin: 0 auto;
+        }
+
+        .pair {
+            display: flex;
+            align-items: center;
+        }
+
+        .pair h2 {
+            flex: 1;
+        }
+
+        .pair img {
+            max-width: 64px;
+            max-height: 64px;
+        }
+
+        .pair.github {
+            justify-content: center;
+        }
+
+        .pair.github h2 {
+            flex: initial;
+            margin-left: 4px;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #B3B4B3;
+            text-align: center;
+        }
+
+        footer img {
+            width: 90vw;
+            max-width: 500px;
+            margin: 5vh 5vw;
+        }
+
+        footer p, footer a {
+            font-family: Avenir Next;
+            font-style: normal;
+            font-weight: normal;
+            line-height: normal;
+            font-size: 10px;
+            
+
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Hi, I'm</h1>
+            <div class="pair">
+                <h2>
+                    {{ page.name }}
+                </h2>
+                <img src="https://github.com/{{ page.github_username }}.png">
+            </div>
+        </header>
+        {{ content }}
+        <div class="pair github">
+            <a href="https://github.com/{{ page.github_username }}">
+                <img src="/images/GitHub-Mark-64px.svg">
+            </a>
+            <h2>
+                <a href="https://github.com/{{ page.github_username }}">
+                    {{ page.github_username }}
+                </a>
+            </h2>
+        </div>
+    </main>
+    <footer>
+        <a href="/">
+            <img src="/images/footer-logo.svg">
+        </a>
+        <p>
+            Heart by David García from the Noun Project<br>
+            Made with ❤️ by the team at <a href="https://gmvsyncromatics.com">GMV Syncromatics</a>
+        </p>
+    </footer>
+</body>
+
+</html>

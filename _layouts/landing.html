@@ -1,0 +1,129 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ site.title }}</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+        }
+
+        header {
+            display: flex;
+            width: 100%;
+            height: 100vh;
+            background: #ED1C24;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        header #logo {
+            width: 100%;
+            text-align: center;
+        }
+
+        header a {
+            position: absolute;
+            left: 0;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: Avenir Next;
+            font-style: normal;
+            font-weight: normal;
+            line-height: normal;
+            font-size: 24px;
+
+            color: #000000;
+        }
+
+        h2 {
+            font-family: Avenir Next;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            font-size: 36px;
+
+            color: #000000;
+        }
+
+        a {
+            color: #000000;
+        }
+
+        main {
+            max-width: 325px;
+            margin: 0 auto;
+        }
+
+        .participants {
+            list-style: none;
+            padding: 0;
+        }
+
+        .participants li {
+            display: flex;
+            align-items: center;
+        }
+
+        .participants li h2 {
+            flex: 1;
+        }
+
+        .participants li img {
+            max-width: 64px;
+            max-height: 64px;
+        }
+
+        footer p {
+            font-family: Avenir Next;
+            font-style: normal;
+            font-weight: normal;
+            line-height: normal;
+            font-size: 10px;
+            text-align: center;
+
+            color: #000000;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="/images/landing-logo.svg">
+        </div>
+        <a href="#read_more">
+            <img src="/images/down-arrow.svg">
+        </a>
+    </header>
+    <main id="read_more">
+        {{ content }}
+        <ul class="participants">
+            {% for participant in site.participants %}
+            <li>
+                <h2>
+                    <a href="{{ participant.url }}">
+                        {{ participant.name }}
+                    </a>
+                </h2>
+                <a href="{{ participant.url }}">
+                    <img src="https://github.com/{{ participant.github_username }}.png">
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </main>
+    <footer>
+        <p>
+            Heart by David García from the Noun Project<br>
+            Made with ❤️ by the team at <a href="https://gmvsyncromatics.com">GMV Syncromatics</a>
+        </p>
+    </footer>
+</body>
+
+</html>
