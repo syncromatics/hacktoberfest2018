@@ -84,6 +84,17 @@
                 </a>
             </h2>
         </div>
+        {% if page.twitter_username != nil %}
+        <div>
+            <br><br>
+            <a class="twitter-timeline" data-height="600" data-theme="dark" href="https://twitter.com/{{ page.twitter_username}}">
+                Tweets by {{ page.name }}
+            </a> 
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8">
+            </script>
+        </div>
+        {% endif %}
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     </main>
     <footer>
         <a href="..">
