@@ -67,8 +67,8 @@
 
 <body>
     <header>
-        <div id="logo">
-            <img src="assets/landing-logo-hires.svg" width="400">
+        <div id="logo" style="max-width: 50%; min-width: 20%; margin: auto">
+            <img src="assets/landing-logo-hires.svg">
         </div>
         <a href="#read_more">
             <img src="assets/down-arrow.svg">
@@ -88,6 +88,7 @@
                     <img src="https://github.com/{{ participant.github_username }}.png">
                 </a>
             </li>
+            <br><br>
             {% endfor %}
         </ul>
     </main>
