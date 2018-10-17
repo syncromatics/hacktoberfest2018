@@ -2,6 +2,13 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:url"                content="{{site.url}}{{site.baseurl}}{{page.url}}"/>
+    <meta property="og:type"               content="article" />
+    <meta property="og:title"              content="{{ page.name }}" />
+    <meta property="og:description"        content="{{ content| markdownify | strip_html | trim }}" />
+    <meta property="og:image"              content="https://github.com/{{ page.github_username }}.png" />
+    <meta name="twitter:card" content="summary">
+
     <title>{{ site.title }}</title>
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/common.css">
     <style type="text/css">
