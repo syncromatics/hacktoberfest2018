@@ -3,7 +3,6 @@ title: Steve
 layout: default
 name: Steve White
 github_username: stevenmwhite
-twitter_username: stevenmwhite
 ---
 
-I'm the Director of Product at Syncromatics, but I've only ever written a few lines of code (and only when driven by a guidebook). I'm basically faking it, but at some level aren't we all? I'm excited to learn more about the entire process of collaboring on code and to have some fun hacking around this Hacktoberfest.
+I'm the Chief Product Officer at GMV Syncromatics, and have been participating with Hacktoberfest with the team for a few years. While my focus is on user-centric design and product-market fit, learning more about code is a lot of fun. I lead the Product and Design teams and work very closely with Engineering, Customer Success, and Marketing to deliver products to our customers.
